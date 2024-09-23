@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="CSS/estilos.css">
+   
+</head>
 </head>
 <body>
+   
     <header>
+       
         <div class="logo">EMT</div>
         <nav>
             <ul>
@@ -20,50 +24,34 @@
 
     <section class="contenido">
         <h1>Bachillerato Tecnológico</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies dolor eget ipsum malesuada imperdiet. Phasellus congue sapien et laoreet pulvinar. Aliquam eleifend sapien a elit cursus, sit amet congue lacus tempus. Etiam sit amet porttitor mauris. Proin iaculis feugiat tortor vel scelerisque. Integer odio dolor, tincidunt at porttitor quis, tincidunt vestibulum augue. Praesent nibh turpis, lacinia sed urna ac, venenatis sagittis diam. Nam ac placerat tellus, id maximus ligula. Nunc faucibus fermentum ipsum, tempus viverra lorem tempor vel.</p>
+        <p>El Liceo Logosófico ofrece un Bachillerato Tecnológico en Tecnologías de la Información 
+            diseñado para formar jóvenes con un perfil altamente competitivo en el ámbito de la informática 
+            y la tecnología. Nuestra propuesta educativa se centra en el desarrollo de habilidades técnicas
+             avanzadas, complementadas con una formación integral que abarca valores éticos, pensamiento
+              crítico y creatividad.</p>
     </section>
 
     <section class="info">
         <p>Siempre desarrollando constantes actividades para el crecimiento de los estudiantes en el área</p>
-
-        <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="imagenes/1.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="imagenes/2.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="imagenes/3.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
     </section>
+    <div class="carousel-container">
+        <input type="radio" name="carousel" id="item-1" checked>
+        <input type="radio" name="carousel" id="item-2">
+
+        <div class="carousel-slides">
+            <div class="carousel-item" id="slide-1">
+                <img src="imagenes/imagen2.jpeg" alt="Primera imagen">
+            </div>
+            <div class="carousel-item" id="slide-2">
+                <img src="imagenes/imagen3.jpeg" alt="Segunda imagen">
+            </div>
+        </div>
+
+        <!-- Botones para navegar -->
+        <div class="carousel-nav">
+            <label for="item-1" class="prev">&#10094;</label>
+            <label for="item-2" class="next">&#10095;</label>
+        </div>
+    </div>
 </body>
 </html>
