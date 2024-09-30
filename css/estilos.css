@@ -15,7 +15,7 @@ header {
     backdrop-filter: saturate(180%) blur(20px);
     background: rgba(250, 250, 252, 0);
 }
-
+/***************header formato********************/
 header .logo {
     font-size: 24px;
     font-weight: bold;
@@ -61,7 +61,11 @@ nav ul li a.boton{
     background-color: #0056b3;
 }
 
-/* Estilo para el contenido principal */
+/**************** Estilo para el contenido principal ******************/
+main {
+    padding: 20px;
+}
+
 .contenido {
     padding: 100px 20px;
     background-color: #0d1326;
@@ -79,10 +83,10 @@ nav ul li a.boton{
     max-width: 600px;
 }
 
-/* Estilo para la sección de información */
+/************ Estilo para la sección de información *******************/
 .info {
-    background-color: #f9f9f9;
-    color: #000;
+    background-color: #0d1326;
+    color: whitesmoke;
     padding: 40px 20px;
     text-align: center;
 }
