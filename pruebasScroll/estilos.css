@@ -1,0 +1,150 @@
+/* General */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #0d1326;
+    padding-top: 80px; /* Espaciado para que el header no cubra el contenido */
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #131c3c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que el header esté por encima del contenido */
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a.boton {
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav ul li a.boton:hover {
+    background-color: #0056b3;
+}
+
+/* Sección de contenido */
+.contenido {
+    padding: 100px 20px; /* Ajustar para evitar superposición con el header */
+    background-color: #0d1326;
+    text-align: left;
+}
+
+.contenido h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.contenido p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    color: #d1d1d1;
+}
+
+/* Sección de tarjetas */
+.knowledge-section {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+.knowledge-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px 0;
+    max-width: 1200px;
+    margin: 0 auto; /* Centramos el contenedor de tarjetas */
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: hsl(0, 0%, 86%);
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #0d1326;
+}
+
+.card-body {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 15px;
+    color: #0d1326;
+}
+
+/* Responsivo: Estilo para tablets */
+@media (max-width: 992px) {
+    .card-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 48%; /* Ajustamos a 48% para que quepan dos tarjetas en pantallas medianas */
+    }
+}
+
+/* Estilo para dispositivos móviles */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card {
+        width: 100%; /* Cada tarjeta ocupa el 100% del ancho en móviles */
+    }
+}
