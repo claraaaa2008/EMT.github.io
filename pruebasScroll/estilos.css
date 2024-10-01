@@ -50,11 +50,8 @@ nav ul li a.boton {
     padding: 10px 20px;
     border-radius: 5px;
 } .boton:hover {
-
-}
-
-nav ul li a.boton:hover {
-    background-color: #0056b3;
+    background-color: #85b8ff5d;
+    color: #0d1326;
 }
 
 /* Sección de contenido */
@@ -130,6 +127,28 @@ nav ul li a.boton:hover {
     }
 
 /************ Estilo para la sección de información *******************/
+footer {
+    background-color: #0d1326;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer .footer-content div {
+    width: 30%;
+}
+
+footer .inscribirse table tr {
+    margin-bottom: 10px;
+}
+
 .info {
     background-color: #0d1326;
     color: whitesmoke;
