@@ -133,8 +133,13 @@ nav ul li a.boton:hover {
 .info {
     background-color: #0d1326;
     color: whitesmoke;
-    padding: 40px 20px;
+    padding: 40px 60px;
     text-align:left;
+
+}
+
+.info h2 {
+    margin-bottom: 15px;
 }
 
 .info p {
