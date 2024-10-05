@@ -1,17 +1,10 @@
-/* General */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     margin: 0;
     font-family: Roboto;
     background-color: white;
 }
 
-/* Encabezado */
+/************************ Encabezado **************************/
 header {
     display: flex;
     justify-content: space-between;
@@ -58,18 +51,9 @@ nav ul li a.boton {
     text-decoration: none;
 }
 
-
-.dark-background {
-    color: white;
-  }
-  
-  .light-background {
-    color: black;
-  }
-
-/* Sección de contenido */
+/*************************** Sección de contenido ***************************/
 .contenido {
-    padding: 100px 20px; /* Ajustar para evitar superposición con el header */
+    padding: 100px 20px;
     background-color: #0d1326;
     text-align: center;
 }
@@ -89,14 +73,13 @@ nav ul li a.boton {
     padding-inline: 100px;
 }
 
-/* Sección de tarjetas */
+/*********************** Sección de tarjetas **************************/
 .knowledge-section {
     text-align: center;
     width: 100%;
     margin: 0 auto;
     background-color: #fff;
     padding: 40px 20px;
-    border-radius: 10px;
 } .knowledge-section h2 {
         font-size: 24px;
         margin-bottom: 20px;
@@ -109,7 +92,7 @@ nav ul li a.boton {
     gap: 20px;
     padding: 40px 0;
     max-width: 1200px;
-    margin: 0 auto; /* Centramos el contenedor de tarjetas */
+    margin: 0 auto;
 }
 
     .card {
@@ -139,7 +122,7 @@ nav ul li a.boton {
         color: #0d1326;
     }
 
-/************ Estilo para la sección de información *******************/
+/**************** Estilo para la sección de información *******************/
 footer {
     background-color: #0d1326;
     color: white;
